@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "constants": "libs/constants",
     "server": "apps/server",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e"

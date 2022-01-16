@@ -3,6 +3,7 @@ import { ChakraProvider, Portal, Switch, useDisclosure } from "@chakra-ui/react"
 import Sidebar from "../components/Sidebar/Sidebar.js";
 import theme from '../theme/theme'
 import routes from "../routes.js";
+import { APP_NAME } from '@lunar/constants';
 
 import Head from 'next/head';
 import './styles.css';
@@ -28,7 +29,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <ChakraProvider theme={theme} resetCSS={false}>
           <Sidebar
             routes={routes}
-            logoText={"PURITY UI DASHBOARD"}
+            logoText={APP_NAME}
           // display="none"
           // sidebarVariant={sidebarVariant}
           // {...rest}
